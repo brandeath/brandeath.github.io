@@ -1,13 +1,22 @@
 ---
-layout: article
+layout: post
 title: "热力学势"
 date: 2015-02-17
 modified: 2015-03-25
 author: OctoMiao
 toc: true
 comments: true
-categories: science
+categories: PeppyPapers
 summary: 热力学势之间的关系以及 Legendre 变换
+
+tags:
+- paper
+- SGD
+- convex optimization
+- neural networks
+- batch
+- machine learning
+- test
 ---
 
 
