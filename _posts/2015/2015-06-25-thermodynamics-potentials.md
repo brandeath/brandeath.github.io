@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "热力学势"
-date: 2015-02-17
+date: 2015-06-17
 modified: 2015-03-25
 author: OctoMiao
 toc: true
@@ -44,7 +44,7 @@ tags:
 <figcaption>
 热力学势的关系图。符号意义请看下文解释。
 </figcaption>
-![Thermodynamic Potentials]({{site.url}}/images/posts/thermodynamic/thermodynamicPotentials1.png)
+![Thermodynamic Potentials]({{site.url}}/images/posts/2015/thermodynamicPotentials1.png)
 </figure>
 
 这篇文章就是简要的解释一下这张图，以及 Legendre 变换。
@@ -138,7 +138,7 @@ $$Y =  \left(\frac{\partial U}{\partial X}\right)_S$$
 <figcaption>
 Legendre 变换图解。
 </figcaption>
-![]({{site.url}}/images/posts/thermodynamic/legendreTransformation2.png)
+![]({{site.url}}/images/posts/2015/legendreTransformation2.png)
 </figure>
 
 这里面的几何关系就是，$p$ 是斜率，$f'(x)$ 也是斜率。
@@ -153,7 +153,7 @@ $$F(p) + f(x) = xp$$
 <figcaption>
 Legendre 变换的意义。基于<a href="http://arxiv.org/abs/0806.1147" target="_blank">arXiv:0806.1147</a>中的图修改。
 </figcaption>
-![]({{site.url}}/images/posts/thermodynamic/legendreTransformation3.png)
+![]({{site.url}}/images/posts/2015/legendreTransformation3.png)
 </figure>
 
 
