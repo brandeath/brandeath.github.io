@@ -6,7 +6,7 @@ modified: 2015-03-25
 author: OctoMiao
 toc: true
 comments: true
-categories: life
+category: life
 summary: 热力学势之间的关系以及 Legendre 变换
 
 tags:
