@@ -18,11 +18,8 @@ tags:
 - GTD
 ---
 
-# [Career Advice From an Oldish Not-Quite Geezer](http://m.chronicle.com/article/Career-Advice-From-an-Oldish/230335/)
-标签（空格分隔）： 未分类
-
----
-[TOC]
+* Contents" header
+{:toc}
 
 Career Advice From an Oldish Not-Quite Geezer
 You can’t count on your publications and awards to take care of you
