@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title></title>
+    <description>Natural Language Processing, Semantic Embedding, Machine learning, deep learning</description>    
+    <link></link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Ipython Notebook 学习</title>
+                
+        
+          <description>&lt;p&gt;Ipython Notebook  学习&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 23 Jun 2015 00:00:00 +0800</pubDate>
+        <link>/science/2015/06/23/Ipython-Notebook.html</link>
+        <guid isPermaLink="true">/science/2015/06/23/Ipython-Notebook.html</guid>
+      </item>
+    
+      <item>
+        <title>热力学势</title>
+                
+        
+          <description>&lt;p&gt;本科学习的热力学主要的内容包括下面几部分（参考 &lt;em&gt;A Modern Course in Statistical Physics&lt;/em&gt; by L. E. Reichl）：&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 17 Jun 2015 00:00:00 +0800</pubDate>
+        <link>/science/2015/06/17/thermodynamics-potentials.html</link>
+        <guid isPermaLink="true">/science/2015/06/17/thermodynamics-potentials.html</guid>
+      </item>
+    
+      <item>
+        <title>Adapations and Variations of Word2vec</title>
+                
+        
+          <description>&lt;p&gt;word2vec 作为一个已经被广为流传的工具，其优点已不必多说。那么它有什么缺陷和不足呢？其实其作者 Mikolov 是一个非常典型的工程型选手，实用主义，什么简单方便有效就用什么；导致 word2vec 作为一个简单的模型，其忽略了很多文本中的其他信息。那么这些其他信息都有什么呢？&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 23 May 2015 00:00:00 +0800</pubDate>
+        <link>/peppypapers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html</link>
+        <guid isPermaLink="true">/peppypapers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html</guid>
+      </item>
+    
+      <item>
+        <title>Improving Word Representations via Global Context and Multiple Word Prototypes</title>
+                
+        
+          <description>&lt;p&gt;《Improving Word Representations via Global Context and Multiple Word Prototypes》这篇论文意在用全文信息辅助局部信息和多个词向量共同表示一个词的方法，增强语义。不止如此，在我看来，这篇论文最重要的地方有四个：首先的思想是 word disambiguation 在 context level；第二个是用 C&amp;amp;W 的 ranking loss 会比以前的 log-likelihood 训练速度快。第三个是把 local 和 global 的两种 score 设计成 NN 中的两个 part，分别用一层 hidden layer 学习。但是这里他们只用了简单的加法，而没有线性权重参数 $\alpha$。后人许多改进了 $\alpha$，还做了些参数对比展示实验结果。不过本质没区别。第四个是他们并没有直接用 SGD，二是用了 1000 的 mini-batch L-BFGS，这点好像追随的人不多。&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 03 May 2015 00:00:00 +0800</pubDate>
+        <link>/peppypapers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html</link>
+        <guid isPermaLink="true">/peppypapers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html</guid>
+      </item>
+    
+      <item>
+        <title>DeepWalk Online Learning of Social Representations</title>
+                
+        
+          <description>&lt;p&gt;《&lt;strong&gt;DeepWalk: Online Learning of Social Representations&lt;/strong&gt;》是一篇我个人非常喜欢的论文，不仅提出了一个想法，更展示了这个想法的可行性和可能空间。提出的想法是利用网络结构信息将用户表示为低维实值向量，学出来的表示是最重要的，因为有了表示就可以用来加在许多其他任务上。&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 18 Apr 2015 00:00:00 +0800</pubDate>
+        <link>/peppypapers/2015/04/18/DeepWalk-Online-Learning-of-Social-Representations.html</link>
+        <guid isPermaLink="true">/peppypapers/2015/04/18/DeepWalk-Online-Learning-of-Social-Representations.html</guid>
+      </item>
+    
+      <item>
+        <title>Collections of Tips for Machine Learning</title>
+                
+        
+          <description>&lt;p&gt;收集了一些我觉得真的有用实战机器学习的文章。比如如何调参，比如会遇到什么真实数据带来的问题，如何 debug，如何 speed-up。长期更新。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jmetzen.github.io/2015-01-29/ml_advice.html&quot;&gt;&lt;strong&gt;Advice for applying Machine Learning&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;主要集中在如何观察数据来选择方法。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://vitalflux.com/machine-learning-debug-learning-algorithm-regression-model/&quot;&gt;&lt;strong&gt;How to Debug Learning Algorithm for Regression Model&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;主要都是讲回归中遇到的各种“预期不符”的结果。配合 ESL 第二章和第三章内容看效果加成。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.weibo.com/p/1001603816330729006673&quot;&gt;&lt;strong&gt;训练深度神经网络的时候需要注意的一些小技巧&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这篇是综合翻译，没给出都从哪节选的。我收集的英文版在下面：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://deeplearning4j.org/trainingtricks.html&quot;&gt;&lt;strong&gt;Training Tricks from Deeplearning4j&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;deeplearning4j 的 googlegroups 也很推荐。这篇其实干货不多，但是也有一些了。包括对于训练的理解，并不全是干货般的总结。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.weibo.com/p/1001603799166017998138&quot;&gt;&lt;strong&gt;Suggestions for DL from Llya Sutskeve&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Hinton 亲传弟子介绍深度学习的实际 tricks，包括data, preprocessing, minibatches, gradient normalization, learning rate, weight initialization, data augmentation, dropout和ensemble。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://fb56552f-a-62cb3a1a-s-sites.googlegroups.com/site/deeplearningworkshopnips2014/71.pdf?attachauth=ANoY7cp_eDwTXPm6iWHdBRhlIsgPASEAwkW-exLSOsz467mge7zLCkBMWznOu_G90vGVtqNvXOusc4z6cC6hEnHk6YzHtuEr_kyU0fyme7asaECN0zvoNwDk5258CueoB6fY3WtLvbJzYok1xiIeWSFYtk5mKXCXFDMI6djwhjCX1xi0GEEv_x7uMQwTdQlDItZ3kgLnZ2RjctQmIXDCu58fS3Wby4vWX3CkhMIf_EpCXx7jDn_M2SM%3D&amp;amp;attredirects=0&quot;&gt;&lt;strong&gt;Efficient Training Strategies for Deep Neural Network Language Models&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;讨论了如何设置 batch-size, initial learning rate, network initialization，但最有趣的结论应该是：普通的 deep feed-forward architecture比recurrent NN 在 model long distance dependency 效果和效率都更好。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.kentran.net/2013/04/neural-network-best-practices.html&quot;&gt;&lt;strong&gt;Neural Networks Best Practice&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Uber 的 data scientist 写的。比如: Rectifier is becoming popular as an activation function. However, I find its theory dubious and my experiments have not shown that it is always better. That said, I’m experimenting with new activation functions. (Little trivia: I’m borrowing many ideas from my graduate work in computational wave propagation.)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://papers.nips.cc/paper/5333-large-scale-l-bfgs-using-mapreduce.pdf&quot;&gt;&lt;strong&gt;Large-scale L-BFGS using MapReduce&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;NIPS’14 的论文，简单并行化 LBFGS里面的双循环（最耗时，计算量巨大）。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.datadive.net/selecting-good-features-part-iv-stability-selection-rfe-and-everyting-side-by-side/&quot;&gt;&lt;strong&gt;特征工程选择系列&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;特征工程系列文章：Part1.单变量选取 Part2.线性模型和正则化 Part3.随机森林 Part4.稳定性选择法、递归特征排除法(RFE)及综合比较。有 Python 代码。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.weibo.com/p/1001603795687165852957&quot;&gt;&lt;strong&gt;机器学习代码心得之​有监督学习的模块&lt;/strong&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.weibo.com/p/1001603795714256832384&quot;&gt;&lt;strong&gt;机器学习代码心得之迭代器和流水处理&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;新一代大神陈天奇怪的系列文章，有兴趣的直接顺着看吧。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://yanirseroussi.com/2014/12/29/stochastic-gradient-boosting-choosing-the-best-number-of-iterations/&quot;&gt;&lt;strong&gt;STOCHASTIC GRADIENT BOOSTING: CHOOSING THE BEST NUMBER OF ITERATIONS&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Kaggle达人YANIR SEROUSSI告诉你如何选择Stochastic Gradient Boosting的训练最佳iteration超参数。不过我比较存疑，因为如果条件允许，当然迭代的越多越好……&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.eeshyang.com/papers/KDD14Jubjub.pdf&quot;&gt;&lt;strong&gt;Large-Scale High-Precision Topic Modeling on Twitter&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Twitter 高级研究员的 KDD’14论文。有不少实用技巧，比如短文本特征，LR结果概率化修正，正样本抽样，PU学习后负样本选取。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks.pdf&quot;&gt;&lt;strong&gt;How transferable are features in deep neural
+networks?&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;也是争议比较大的一篇文章，finetuning 有一定帮助，但是不够细致。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/yihaizhiyan/article/details/41359957&quot;&gt;&lt;strong&gt;Dark Knowledge from Hinton&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;有心人整理的 Hinton 提到的 Dark Knowledge 的一些资源。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://leon.bottou.org/publications/pdf/tricks-2012.pdf&quot;&gt;&lt;strong&gt;Stochastic Gradient Descent Tricks&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;L eon Bottou 写的 Stochastic Gradient Descent Tricks 挺好，做工程也要做的漂亮。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/zouxy09/article/details/45288129&quot;&gt;**神经网络训练中的Tricks之高效BP（反向传播算法）&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;翻译文章。神经网络训练中的Tricks之高效BP（反向传播算法），来自与于《Neural Networks: Tricks of the Trade》一书第二版中的第一章 Efficient BackProp 的部分小节。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bavm2013.splashthat.com/img/events/46439/assets/34a7.ranzato.pdf&quot;&gt;&lt;strong&gt;Deep Learning for Vision: Tricks of the Trade&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Marc’Aurelio Ranzato 在 CVPR 上 的 presentation slides/talk（Youtube 等地方可以搜到）。caffe 作者之一贾扬清推荐。涉及到了许多 DL 的调参技巧（在 slides 比较靠后的地方）&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 17 Apr 2015 00:00:00 +0800</pubDate>
+        <link>/machinelearning/2015/04/17/collections-of-tips-for-machine-learning.html</link>
+        <guid isPermaLink="true">/machinelearning/2015/04/17/collections-of-tips-for-machine-learning.html</guid>
+      </item>
+    
+      <item>
+        <title>我是这样进行知识管理的</title>
+                
+        
+          <description>&lt;p&gt;写这篇博客是前几天看到别人分享 pluskid 的&lt;a href=&quot;http://freemind.pluskid.org/misc/knowledge-accumulate/&quot;&gt;《关于知识整理、积累与记忆》&lt;/a&gt;，加之我自己一直以来也很关注这件事，也有一点点心得。整理出来自己回顾，和大家讨论。&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 15 Apr 2015 00:00:00 +0800</pubDate>
+        <link>/life/2015/04/15/how-i-manage-my-knowledge.html</link>
+        <guid isPermaLink="true">/life/2015/04/15/how-i-manage-my-knowledge.html</guid>
+      </item>
+    
+      <item>
+        <title>Github Pages Categories with Jekyll</title>
+                
+        
+          <description>&lt;p&gt;When Jekyll is friendly to tags in post, it is not that .&lt;/p&gt;
+
+&lt;p&gt;There are three questions that you’ll encounter using categories: (1) Multiple word category name; (2) Multi categories; (3) Archive posts by a specific category.&lt;/p&gt;
+
+&lt;h2 id=&quot;multiple-word-category-name&quot;&gt;Multiple word category name&lt;/h2&gt;
+
+&lt;p&gt;When we want to name a category using multiple words (more than 1 word, contains spaces), jekyll will defaulty generate a permalink with the form http://domain.com/category/year/month/title and result in urls with dashes. It is the case and not bugs. We cannot easily change the permalink settings for the way Jekyll generates urls for posts in the config form but this can be done with a plugin.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;But, Github Pages just forbid any plugins&lt;/strong&gt;. Thus, it will work on your own server other than blogs on Github Pages. Therefore, I suggest no spaces in category names.&lt;/p&gt;
+
+&lt;h2 id=&quot;multi-categories&quot;&gt;Multi categories&lt;/h2&gt;
+
+&lt;p&gt;The second question is we sometimes want to category one post into multiple categories, like tags. Here we need to be careful with the frontmatters. Jekyll requires that Markdown files have front-matter defined at the top of every file. And for categories, it provides two formats of frontmatters. In the Jekyll’s &lt;a href=&quot;http://jekyllrb.com/docs/frontmatter/#predefined-global-variables&quot;&gt;documentations&lt;/a&gt;, both &lt;em&gt;category&lt;/em&gt; and &lt;em&gt;categories&lt;/em&gt; are available.&lt;/p&gt;
+
+&lt;p&gt;Is there any differences? Sure. When we just need only one category, we can use both&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+category: This is one category
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+categories: This is one category
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;But, you’ve may got that when comes to multiple categories, we can &lt;strong&gt;only&lt;/strong&gt; use &lt;em&gt;categories&lt;/em&gt; and carefully using two formats below:
+&lt;code&gt;
+categories
+  - This is one category
+  - This is another category
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;or the square brackets way:
+&lt;code&gt;
+categories: [&#39;The is a category&#39;, &#39;This is another category&#39;]
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;It makes sense.&lt;/p&gt;
+
+&lt;p&gt;So, the further question is, are &lt;em&gt;category&lt;/em&gt; and &lt;em&gt;categories&lt;/em&gt; really same when only one category? Actually, they don’t have the same effect on post object. When declaring &lt;em&gt;category&lt;/em&gt;, post.category (string) and post.categories (array) are set. When declaring &lt;strong&gt;categories&lt;/strong&gt;, only post.categories is set. Be careful!&lt;/p&gt;
+
+&lt;h2 id=&quot;archive-posts-by-a-specific-category&quot;&gt;Archive posts by a specific category&lt;/h2&gt;
+
+&lt;p&gt;But problems still show up when we want to archive the posts by a specific category. We may first try something like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt; 
+{% for post in site.categories.&#39;This is one category&#39; %}  
+...  
+{% endfor %}     
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;or this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+{% for post in site.posts | where: &#39;category&#39;,&#39;This is one category&#39; %}    
+...    
+{% endfor %}       
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;If you tried, you failed. It is because you cannot put a filter on a loop. You have to capture first, then loop:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+{% capture myposts %} { { site.posts where: &#39;category&#39;,&#39;This is one category&#39; } }       
+{% endcapture %}         
+{% for post in myposts %}     
+...        
+{% endfor %}       
+&lt;/code&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 12 Apr 2015 00:00:00 +0800</pubDate>
+        <link>/misc/2015/04/12/github-pages-categories-with-jekyll.html</link>
+        <guid isPermaLink="true">/misc/2015/04/12/github-pages-categories-with-jekyll.html</guid>
+      </item>
+    
+      <item>
+        <title>Speed of Mini-Batch SGD</title>
+                
+        
+          <description>&lt;p&gt;This post comes from a friend’s question, that he says sometimes mini-batch SGD converges more slowly than single SGD.&lt;/p&gt;
+
+&lt;p&gt;Let’s begin with what these two kinds of method are and where they differ. Here notice that mini-batch methods come from batch methods.&lt;/p&gt;
+
+&lt;h2 id=&quot;batch-gradient-descent&quot;&gt;Batch gradient descent&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sgd_batch.png&quot; alt=&quot;figures from L´eon Bottou&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Batch gradient descent&lt;/strong&gt; computes the gradient using the whole dataset, while Stochastic gradient descent (SGD) computes the gradient using a single sample. This is great for convex, or relatively smooth error manifolds. In this case, we move &lt;em&gt;directly&lt;/em&gt; towards an optimum solution, either local or global.&lt;/p&gt;
+
+&lt;h3 id=&quot;pros&quot;&gt;pros&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Great for convex, or relatively smooth error manifolds because it &lt;em&gt;directly&lt;/em&gt; towards to the optimum solution.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;cons&quot;&gt;cons&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Using the whole dataset means that it is updating the parameters using all the data. Each iteration of the batch gradient descent involves a computation of the average of the gradients of the loss function over the entire training data set. So the computation cost matters.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;stochastic-gradient-descent&quot;&gt;Stochastic gradient descent&lt;/h2&gt;
+
+&lt;p&gt;While Batch gradient descent computes the gradient using the whole dataset, &lt;strong&gt;Stochastic gradient descent (SGD)&lt;/strong&gt; computes the gradient using a single sample.&lt;/p&gt;
+
+&lt;h3 id=&quot;pros-1&quot;&gt;pros&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Obviously SGD’s computationally a whole lot faster.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Single SGD works well &lt;strong&gt;better than&lt;/strong&gt; batch gradient descent &lt;em&gt;when the error manifolds that have lots of local maxima/minima&lt;/em&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;cons-1&quot;&gt;cons&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Sometimes, with the computational advantage, it should perform many more iterations of SGD, making many more steps than conventional batch gradient descent.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;mini-batch-sgd&quot;&gt;mini-batch SGD&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sgd_minibatch.png&quot; alt=&quot;figures from L´eon Bottou&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There comes the compromise of this two kinds of methods. When the batch size is 1, it is called stochastic gradient descent (GD).
+When you set the batch size to 10 or to some extend larger, this method is called &lt;strong&gt;mini-batch SGD&lt;/strong&gt;. Mini-batch performs better than true stochastic gradient descent because when the gradient computed at each step uses more training examples, mini-batches tend to average a little of the noise out that single samples inherently bring. Thus, the amount of noise is reduced when using mini-batches. Therefore, we usually see smoother convergence out of local minima into a more optimal region.&lt;/p&gt;
+
+&lt;p&gt;Thus, the batch size matters for the balance. We primally want the size to be small enough to avoid some of the poor local minima, and large enough that it doesn’t avoid the global minima or better-performing local minima. Also, a pratical consideratio raises from tractability that each sample or batch of samples must be loaded in a RAM-friendly size.&lt;/p&gt;
+
+&lt;p&gt;So let’s be more clear:&lt;/p&gt;
+
+&lt;h2 id=&quot;why-should-we-use-mini-batch&quot;&gt;Why should we use mini-batch?&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;It is small enough to let us implement vectorization in RAM.&lt;/li&gt;
+  &lt;li&gt;Vectorization brings efficiency.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;disadvantage-of-mini-batch-sgd&quot;&gt;Disadvantage of mini-batch SGD&lt;/h2&gt;
+&lt;p&gt;is the difficulty in balancing the batch size &lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;However, in the paper &lt;a href=&quot;http://link.springer.com/article/10.1007%2Fs10107-012-0572-5&quot;&gt;&lt;em&gt;Sample size selection in optimization methods for machine learning&lt;/em&gt;&lt;/a&gt;, the author points out that though large mini-batches are preferable to reduce the
+communication cost, they may slow down convergence rate in practice. And Mu Li in this &lt;a href=&quot;http://www.cs.cmu.edu/~muli/file/minibatch_sgd.pdf&quot;&gt;&lt;em&gt;papar&lt;/em&gt;&lt;/a&gt; is dealing with this problem.&lt;/p&gt;
+
+&lt;h2 id=&quot;ref&quot;&gt;Ref&lt;/h2&gt;
+
+&lt;p&gt;[1]Bottou, Léon. &lt;em&gt;Large-scale machine learning with stochastic gradient descent.&lt;/em&gt; Proceedings of COMPSTAT’2010. Physica-Verlag HD, 2010. 177-186.&lt;/p&gt;
+
+&lt;p&gt;[2]Bottou, Léon. &lt;em&gt;Online learning and stochastic approximations.&lt;/em&gt; On-line learning in neural networks 17.9 (1998): 142.&lt;/p&gt;
+
+&lt;p&gt;[3]Li, Mu, et al. &lt;em&gt;Efficient mini-batch training for stochastic optimization.&lt;/em&gt; Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining. ACM, 2014.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 11 Apr 2015 00:00:00 +0800</pubDate>
+        <link>/peppypapers/2015/04/11/speed-of-mini-batch-sgd.html</link>
+        <guid isPermaLink="true">/peppypapers/2015/04/11/speed-of-mini-batch-sgd.html</guid>
+      </item>
+    
+      <item>
+        <title>2014年度总结</title>
+                
+        
+          <description>&lt;p&gt;例行总结，主要回顾下半年。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;技术&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;这半年工作中最大的体会就是维护自己常用的脚本、模板库、工作流程是多么值得的事情啊！直观地可参阅《geeks and repetitive tasks》那张图。&lt;/li&gt;
+  &lt;li&gt;做爬虫的时候被 beautifulsoup4 的一些奇怪行为坑的啊，暂时用 lxml 代替（scrapy）。&lt;/li&gt;
+  &lt;li&gt;被说 Python 写的很 Java，我觉得好像用起 pyquery 会好很多呢！&lt;/li&gt;
+  &lt;li&gt;关于爬虫这件事，发现了一些“爬虫的艺术”的文章(http://blog.urx.com/urx-blog/2014/9/4/the-science-of-crawl-part-1-deduplication-of-web-content)蛮有趣的。比如 bloom filter 众所周知的去重错判，我暂时考虑用 dict 方式做精确去重，当然了缺陷就是内存膨胀。&lt;/li&gt;
+  &lt;li&gt;在老板的莫名信任下，搭建了实验室的分布式环境。坑没有想象中多，稍微折腾了一下 native library 的问题。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;学术&lt;/h2&gt;
+
+&lt;p&gt;年底三个月来到新的实验室，老板最初是希望我能多 support 师兄师姐。于是自己变得很 multi-task，经常周一周二优化师兄的代码，周三周四来帮学姐做些 experiment。确实充实，而且大大提高了自己的动手能力。在这种 task-driven 下，自己的效率提高了不少，也不能说因为占用了自己的思考时间而全无收获呢。&lt;/p&gt;
+
+&lt;p&gt;年底整理 Evernote/bookmark/待读论文 Tutorial 有感：1、sequential 的回顾学习，温故知新是一定的；2、完全掌握了的东西，把它们 pop out 自己的待读列表里，成就感棒棒的；3、除了硬知识的收获，更多地可以关注自己软思维的成长。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;被 AAAI 拒了一次，虽然老板说很大原因是赶上的 reviewer 都不是做我这个方向的。但我觉得还是自己的 paper 有很多可以被人 argue 的部分吧，不够完善，不然，总是可以瑕不掩瑜的。&lt;/li&gt;
+  &lt;li&gt;本来对于现在在做的事情不是很着急了，因为刚来的时候自己是实验室里进度最慢的，完全连 model 都没定，想法也不成熟。结果两个月下来开组会，老板忽然说，觉得我是最有希望 2月份 发 ACL 的。我 faint 啊……不过我还是会努力的！&lt;/li&gt;
+  &lt;li&gt;现在对于学术这件事也很迷茫了，有很多时候真的无法说服自己相信自己在做一件很有价值的事情（但是手下这篇 paper 我确实觉得很 promising，当然，只是 idea promising，能不能做出来就……），而且开会的时候也总会听到老板说，这个会审稿什么风格，那个会又如何如何，感觉讨巧的东西太多。但大概这些想法只是因为我还太年轻太任性吧……&lt;/li&gt;
+  &lt;li&gt;写了一本科普性的书的 Chapter，特别特别惭愧，包括之前的一本书，辜负了很多人的期待和信任吧，自己一直拖稿。这次终于狠下心好好鞭笞了自己一把，最后的自我满意度能达到 80%。不过最近回忆起这本书的内容，我还是觉得自己眼界很小，写知识，就只能写出知识，却写不出一些宏大的 Vision，全局观。我觉得一是受限于自己本身的眼界，二是受限于日益退化的表达能力……想起熊辉大大微博说的话，&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;@熊辉Rutgers
+最近思考人或者企业的竞争，都是逐渐更复杂，更高级。有低到高： 1）拼勤奋； 2）拼智商 + 勤奋；3）拼 情商 + 智商 + 勤奋； 4） 拼 VISION （对未来趋势的把握） + 情商 + 智商 + 勤奋。最高等的一定有VISION&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;心智&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;独自生活以后，确实感觉自由了很多。更深刻理解了一句话，自律等于自由。但是同时反过来想，这种自由的感觉并不是平白无故产生的。我的自由来自于我不怕失去的东西很少，和我想得到的东西都已经得到并且能轻易获得。任何选择都有得失，我们的今天，不仅是过去所有选择的总和，也是所有没得选择的总和，the way we miss our life is life。&lt;/li&gt;
+  &lt;li&gt;投资自己，不再成为 job task-driven 的奴隶。持续学习，每天自己 1-2 小时时间自由学习。坚持运动，关注健康，尤其是自己的心情:P&lt;/li&gt;
+  &lt;li&gt;从现在老板的身上看到了并且想学习的重要品质是与人争论的技巧。现在的我越来越喜欢能和我争论，最好能说服我的人。偏听则暗，至少这样我可以知道都有哪些相反的意见。再说回更简单的，就是要保持谦卑和好奇心。&lt;/li&gt;
+  &lt;li&gt;坚持了一些不美好生活里的英雄梦想，并且要继续坚持。&lt;/li&gt;
+  &lt;li&gt;自己的戾气和悲观少了很多，不安感和无力感逐渐消散。感觉自己越来越能这个世界和平相处，但庆幸自己还没有满足于他的表面的和平。我学会了发现越来越多的小确幸并且让它们变成了沉甸甸的砝码压在枕边和心头，但也同时拥有了目标实现时的巨大的成就感。我学会了享乐，也还没有忘记深刻的思考。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;读书&lt;/h2&gt;
+&lt;p&gt;终于开始觉得，读书是一件很私人的事情。以后不再多做读书总结了。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;交易&lt;/h2&gt;
+&lt;p&gt;下半年交易中分了两个阶段，一个是因为从八月开始我就不断觉得美股要见顶了（这个预测现在反思是有点早了）我便逐渐减仓了美股，第二个就是自己时间上不再允许时差看盘，转而进入A股。
+后来十月中旬的时候基本手头美股仓位基本只有 APPL 和 BITA 了。APPL 我从 83 一直拿到 118，我觉得这是2014年下半年自己做的最好的一只。A股这边自己就只是小追了一下军工和环保。对A股我还是比较谨慎，还是慢慢摸索。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;每个人适合的交易方法不一样。不要总观察别人的操作，也不要自己频繁操作，而是去想清楚什么是重要的。&lt;/li&gt;
+  &lt;li&gt;我现在觉得风控是第一位的，A股之前的资金效应带动的版块，很多人都被套了，这种毫无逻辑支撑的大涨，看不清楚，宁愿不追。&lt;/li&gt;
+  &lt;li&gt;风控，资金。&lt;/li&gt;
+  &lt;li&gt;技术流中，找突破还是最稳健的办法。$MS 的图形值得收藏。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;============以下是上半年的交易心得总结=============&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;个股和指数是不同的，个股也分很多种，不能一概而论。有些个股适合长情，看好他们，有些个股适合一夜情，不可以多拿。&lt;/li&gt;
+  &lt;li&gt;能源是最棒我赚钱的股票，我从3月乌克兰事件一直拿到现在。长得稳，大盘好的时候它们涨的慢一些，大盘不好的时候涨幅更大。&lt;/li&gt;
+  &lt;li&gt;做熟悉的股票。这半年我交易次数最多的股票应该是 TNA，它的每个历史点关键位我都很熟悉，可以很快认清走势，做出判断，做了很长一段时间的 DT。每周都有一两天的时间可以让我赚 1-2 块。&lt;/li&gt;
+  &lt;li&gt;现在在测试一个自己的交易系统，这个系统不用主观判断，只用指标来决定买卖。买入在最容易止损的位置。年底再来总结。&lt;/li&gt;
+  &lt;li&gt;我验证了一下自己对于每次判断的正确率，大概在65%，还比较低，但是这不妨碍我交易。如果自己错了，就立刻止损，重新判断，所以我更看重买入的位置，要很容易止损。如果止损错了，又很容易买回。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;section-5&quot;&gt;运动&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;坚持跑步而已。最喜欢的自虐方式了。&lt;/li&gt;
+  &lt;li&gt;后来找到了朋友陪我打壁球，虽然打得不咋样，不过很适合我这种暴力女啊。&lt;/li&gt;
+  &lt;li&gt;2015准备养成一些无器械运动的习惯。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;section-6&quot;&gt;习惯&lt;/h2&gt;
+
+&lt;p&gt;养成了一些习惯：
+1. 每周五整理桌面
+2. 每天两次查看 to-do
+3. Wunderlist App 作为包括买菜清单、回家见人备忘等的 checklist，非常好用！
+4. 周末洗床单被套、半周洗枕套&lt;/p&gt;
+
+&lt;h2 id=&quot;section-7&quot;&gt;人&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;下半年最大的悲哀是被“骗”了钱，人生第一次吧。太过于信任对方。不过，金钱上的损失并不可怕，我也很快调整了心态，虽然我没吸取到啥教训的样子，但是并不会因此而不再相信人。希望自己永远有一个好心态面对不顺心，坚持自己的信心、梦想和好品质。&lt;/li&gt;
+  &lt;li&gt;生活禁不起推敲，不精确，不如意，不停止，力所难及。我带着悲哀，穿过荒唐，遇见时间，和你。&lt;/li&gt;
+  &lt;li&gt;“无论你怎么与他人控制距离，你依然会失去控制，因为这个世界上总有人能让你乖乖交心和伤心。from 韩寒《告白与告别》”&lt;/li&gt;
+  &lt;li&gt;前几天摘了尼采的话：“总之，问题全在于生命力： 你健康，你就热爱生命，向往人生的欢乐；你羸弱，你就念念不忘死亡，就悲观厌世。一个要在人世间有所建树的人最忌悲观主义：”看破红尘–这是巨大的疲劳和一切创造者的末日。”也就是那句，Pain is inevitable. Suffering is optional.&lt;/li&gt;
+  &lt;li&gt;一段看似荒唐却真实的感情，便看淡了很多事情。如果人可以有无限的体验，全知全能，那么人与人之间的真正理解是绝对可达的。如果上帝真是那全知全能的神，他爱世人，我便信。不过经此一遭，我越发豁达和潇洒了。荒唐有时，开心到老。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;section-8&quot;&gt;2015目标&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;提高书面表达能力（写博客）&lt;/li&gt;
+  &lt;li&gt;无器械健身&lt;/li&gt;
+  &lt;li&gt;更有型一点&lt;/li&gt;
+  &lt;li&gt;学会自拍！&lt;/li&gt;
+  &lt;li&gt;每个月总结一次自己的技术收获，项目总结，而不要半年一次&lt;/li&gt;
+  &lt;li&gt;买一双 Christian Louboutin 红底鞋！&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;最后还是谢谢这一年关心我、鼓励我、给过我机会、在我困惑时给我当头棒喝和温柔怀抱的路人和朋友们，因为你们和好书好吃的，才让我觉得生活越来越美好！&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 31 Dec 2014 00:00:00 +0800</pubDate>
+        <link>/misc/2014/12/31/2014%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93.html</link>
+        <guid isPermaLink="true">/misc/2014/12/31/2014%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93.html</guid>
+      </item>
+    
+  </channel>
+</rss>

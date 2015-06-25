@@ -1,0 +1,244 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Ipython Notebook 学习 &#8211; Yanran's Attic</title>
+<meta name="description" content="Natural Language Processing, Semantic Embedding, Machine learning, deep learning">
+<meta name="keywords" content="paper, SGD, convex optimization, neural networks, batch, machine learning, test">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ipython Notebook 学习">
+<meta property="og:description" content="Natural Language Processing, Semantic Embedding, Machine learning, deep learning">
+<meta property="og:url" content="/science/2015/06/23/Ipython-Notebook.html">
+<meta property="og:site_name" content="Yanran's Attic">
+
+
+
+
+
+<link rel="canonical" href="/science/2015/06/23/Ipython-Notebook.html">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Yanran's Attic Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.min.css">
+<!-- Webfonts -->
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/images/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/images/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/favicon.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/favicon.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favicon.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/favicon.png">
+<link rel="shortcut icon" href="/images/favicon.ico"/>
+<link rel="bookmark" href="/images/favicon.ico"/>
+
+
+
+<!-- MathJax -->
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+</head>
+
+<body id="post" >
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="/images/avatar.jpg" alt="Yanran Li photo" class="author-photo">
+					<h4>Yanran Li</h4>
+					<p>Research Assistant at PolyU</p>
+				</li>
+				<li><a href="/about/">Learn More</a></li>
+				<li>
+					<a href="mailto:yanranli.summer@gmail.com"><i class="icon-envelope"></i> Email</a>
+				</li>
+				
+				
+				<li>
+					<a href="http://weibo.com/summerrlee"><i class="icon-weibo"></i> Weibo</a>
+				</li>
+				
+				<li>
+					<a href="https://www.linkedin.com/profile/view?id=233043238"><i class="icon-linkedin"></i> LinkedIn</a>
+				</li>
+				<li>
+					<a href="http://github.com/niangaotuantuan"><i class="icon-github-alt"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+<!-- 				 -->
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="/posts/">All Posts</a></li>
+				<li><a href="/categories/">All Categories</a></li>			
+				<li><a href="/tags/">All Tags</a></li>			
+			</ul>
+		</li>
+		<li><a href="/categories/#peppypapers">PaperNotes</a></li><li><a href="/guestbook">GuestBook</a></li><li><a href="/friends">Friends</a></li><li><a href="/resources">Publications of Deep Learning in NLP</a></li><li><a href="https://web.cs.dal.ca/~vlado/nlp/" class="external">NLP links</a></li><li><a href="http://www.reddit.com/r/machinelearning" class="external">r/machinelearning</a></li><li><a href="https://plus.google.com/communities/112866381580457264725" class="external">Deep Learning G+</a></li>
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="/science/2015/06/23/Ipython-Notebook.html" rel="bookmark" title="Ipython Notebook 学习">Ipython Notebook 学习</a></h1>
+        
+        <h2>June 23, 2015</h2>
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <p>Ipython Notebook  学习</p>
+
+<h2 id="lecture-1-introduction-to-python-programming">Lecture 1 introduction to python programming</h2>
+
+<p>In addition, there are a number of Python keywords that cannot be used as variable names. These keywords are:</p>
+
+<blockquote>
+  <p>and, as, assert, break, class, continue, def, del, elif, else, except, exec, finally, for, from, global, if, import, in, is, lambda, not, or, pass, print, raise, return, try, while, with, yield</p>
+</blockquote>
+
+<ul>
+  <li>[ ] <strong>购物</strong>
+    <ul>
+      <li>[x] 咖啡</li>
+      <li>[x] 法压壶</li>
+      <li>[ ] 纸</li>
+      <li>[ ] 内裤</li>
+      <li>[ ] 牛奶</li>
+    </ul>
+  </li>
+</ul>
+
+<p>\begin{equation}
+   E = mc^2
+\end{equation}
+will be numbered, while</p>
+
+<script type="math/tex; mode=display">e^{\pi i} + 1 = 0</script>
+
+<p>$\rho$</p>
+
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="/tags/#paper" title="Pages tagged paper" class="tag">paper</a><a href="/tags/#SGD" title="Pages tagged SGD" class="tag">SGD</a><a href="/tags/#convex optimization" title="Pages tagged convex optimization" class="tag">convex optimization</a><a href="/tags/#neural networks" title="Pages tagged neural networks" class="tag">neural networks</a><a href="/tags/#batch" title="Pages tagged batch" class="tag">batch</a><a href="/tags/#machine learning" title="Pages tagged machine learning" class="tag">machine learning</a><a href="/tags/#test" title="Pages tagged test" class="tag">test</a></span>
+        <span><a href="/science/2015/06/23/Ipython-Notebook.html" rel="bookmark" title="Ipython Notebook 学习">Ipython Notebook 学习</a> was published on <span class="entry-date date published updated"><time datetime="2015-06-23T00:00:00+08:00">June 23, 2015</time></span></span>
+        (revised: <span class="entry-date date modified"><time datetime="2015-03-25">03/25/2015</time></span>)
+        <span class="author vcard"><span class="fn"><a href="/about/" title="About Yanran Li">Yanran Li</a></span></span>
+        
+      </footer>
+    </div><!-- /.entry-content -->
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    
+    <div class="read-more">
+      
+        <div class="read-more-header">
+          <a href="/science/2015/06/17/thermodynamics-potentials.html" class="read-more-btn">Read More</a>
+        </div><!-- /.read-more-header -->
+        <div class="read-more-content">
+          <h3><a href="/science/2015/06/17/thermodynamics-potentials.html" title="热力学势">热力学势</a></h3>
+          <p>本科学习的热力学主要的内容包括下面几部分（参考 A Modern Course in Statistical Physics by L. E. Reichl）：  Thermodynamic variables; extensive, intensive, neither;...&hellip; <a href="/science/2015/06/17/thermodynamics-potentials.html">Continue reading</a></p>
+        </div><!-- /.read-more-content -->
+      
+      <div class="read-more-list">
+        
+          <div class="list-item">
+            <h4><a href="/peppypapers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html" title="Adapations and Variations of Word2vec">Adapations and Variations of Word2vec</a></h4>
+            <span>Published on May 23, 2015</span>
+          </div><!-- /.list-item -->
+        
+          <div class="list-item">
+            <h4><a href="/peppypapers/2015/05/03/Improving-Word-Representations-via-Global-Context-and-Multiple-Word-Prototypes.html" title="Improving Word Representations via Global Context and Multiple Word Prototypes">Improving Word Representations via Global Context and Multiple Word Prototypes</a></h4>
+            <span>Published on May 03, 2015</span>
+          </div><!-- /.list-item -->
+        
+      </div><!-- /.read-more-list -->
+      
+    </div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2015 Yanran Li. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/hpstr/">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'yanranli'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>	        
+
+</body>
+</html>

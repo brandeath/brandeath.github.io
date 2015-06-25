@@ -1,0 +1,290 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Collections of Tips for Machine Learning &#8211; Yanran's Attic</title>
+<meta name="description" content="收集了一些我觉得真的有用实战机器学习的文章。比如如何调参，比如会遇到什么真实数据带来的问题，如何 debug，如何 speed-up。长期更新。">
+<meta name="keywords" content="machine learning, deep learning">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Collections of Tips for Machine Learning">
+<meta property="og:description" content="收集了一些我觉得真的有用实战机器学习的文章。比如如何调参，比如会遇到什么真实数据带来的问题，如何 debug，如何 speed-up。长期更新。">
+<meta property="og:url" content="/machinelearning/2015/04/17/collections-of-tips-for-machine-learning.html">
+<meta property="og:site_name" content="Yanran's Attic">
+
+
+
+
+
+<link rel="canonical" href="/machinelearning/2015/04/17/collections-of-tips-for-machine-learning.html">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Yanran's Attic Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.min.css">
+<!-- Webfonts -->
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/images/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/images/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/favicon.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/favicon.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favicon.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/favicon.png">
+<link rel="shortcut icon" href="/images/favicon.ico"/>
+<link rel="bookmark" href="/images/favicon.ico"/>
+
+
+
+<!-- MathJax -->
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+</head>
+
+<body id="post" >
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="/images/avatar.jpg" alt="Yanran Li photo" class="author-photo">
+					<h4>Yanran Li</h4>
+					<p>Research Assistant at PolyU</p>
+				</li>
+				<li><a href="/about/">Learn More</a></li>
+				<li>
+					<a href="mailto:yanranli.summer@gmail.com"><i class="icon-envelope"></i> Email</a>
+				</li>
+				
+				
+				<li>
+					<a href="http://weibo.com/summerrlee"><i class="icon-weibo"></i> Weibo</a>
+				</li>
+				
+				<li>
+					<a href="https://www.linkedin.com/profile/view?id=233043238"><i class="icon-linkedin"></i> LinkedIn</a>
+				</li>
+				<li>
+					<a href="http://github.com/niangaotuantuan"><i class="icon-github-alt"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+<!-- 				 -->
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="/posts/">All Posts</a></li>
+				<li><a href="/categories/">All Categories</a></li>			
+				<li><a href="/tags/">All Tags</a></li>			
+			</ul>
+		</li>
+		<li><a href="/categories/#peppypapers">PaperNotes</a></li><li><a href="/guestbook">GuestBook</a></li><li><a href="/friends">Friends</a></li><li><a href="/resources">Publications of Deep Learning in NLP</a></li><li><a href="https://web.cs.dal.ca/~vlado/nlp/" class="external">NLP links</a></li><li><a href="http://www.reddit.com/r/machinelearning" class="external">r/machinelearning</a></li><li><a href="https://plus.google.com/communities/112866381580457264725" class="external">Deep Learning G+</a></li>
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="/machinelearning/2015/04/17/collections-of-tips-for-machine-learning.html" rel="bookmark" title="Collections of Tips for Machine Learning">Collections of Tips for Machine Learning</a></h1>
+        
+        <h2>April 17, 2015</h2>
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <p>收集了一些我觉得真的有用实战机器学习的文章。比如如何调参，比如会遇到什么真实数据带来的问题，如何 debug，如何 speed-up。长期更新。</p>
+
+<p><a href="https://jmetzen.github.io/2015-01-29/ml_advice.html"><strong>Advice for applying Machine Learning</strong></a></p>
+
+<p>主要集中在如何观察数据来选择方法。</p>
+
+<p><a href="http://vitalflux.com/machine-learning-debug-learning-algorithm-regression-model/"><strong>How to Debug Learning Algorithm for Regression Model</strong></a></p>
+
+<p>主要都是讲回归中遇到的各种“预期不符”的结果。配合 ESL 第二章和第三章内容看效果加成。</p>
+
+<p><a href="http://www.weibo.com/p/1001603816330729006673"><strong>训练深度神经网络的时候需要注意的一些小技巧</strong></a></p>
+
+<p>这篇是综合翻译，没给出都从哪节选的。我收集的英文版在下面：</p>
+
+<p><a href="http://deeplearning4j.org/trainingtricks.html"><strong>Training Tricks from Deeplearning4j</strong></a></p>
+
+<p>deeplearning4j 的 googlegroups 也很推荐。这篇其实干货不多，但是也有一些了。包括对于训练的理解，并不全是干货般的总结。</p>
+
+<p><a href="http://www.weibo.com/p/1001603799166017998138"><strong>Suggestions for DL from Llya Sutskeve</strong></a></p>
+
+<p>Hinton 亲传弟子介绍深度学习的实际 tricks，包括data, preprocessing, minibatches, gradient normalization, learning rate, weight initialization, data augmentation, dropout和ensemble。</p>
+
+<p><a href="https://fb56552f-a-62cb3a1a-s-sites.googlegroups.com/site/deeplearningworkshopnips2014/71.pdf?attachauth=ANoY7cp_eDwTXPm6iWHdBRhlIsgPASEAwkW-exLSOsz467mge7zLCkBMWznOu_G90vGVtqNvXOusc4z6cC6hEnHk6YzHtuEr_kyU0fyme7asaECN0zvoNwDk5258CueoB6fY3WtLvbJzYok1xiIeWSFYtk5mKXCXFDMI6djwhjCX1xi0GEEv_x7uMQwTdQlDItZ3kgLnZ2RjctQmIXDCu58fS3Wby4vWX3CkhMIf_EpCXx7jDn_M2SM%3D&amp;attredirects=0"><strong>Efficient Training Strategies for Deep Neural Network Language Models</strong></a></p>
+
+<p>讨论了如何设置 batch-size, initial learning rate, network initialization，但最有趣的结论应该是：普通的 deep feed-forward architecture比recurrent NN 在 model long distance dependency 效果和效率都更好。</p>
+
+<p><a href="http://www.kentran.net/2013/04/neural-network-best-practices.html"><strong>Neural Networks Best Practice</strong></a></p>
+
+<p>Uber 的 data scientist 写的。比如: Rectifier is becoming popular as an activation function. However, I find its theory dubious and my experiments have not shown that it is always better. That said, I’m experimenting with new activation functions. (Little trivia: I’m borrowing many ideas from my graduate work in computational wave propagation.)</p>
+
+<p><a href="http://papers.nips.cc/paper/5333-large-scale-l-bfgs-using-mapreduce.pdf"><strong>Large-scale L-BFGS using MapReduce</strong></a></p>
+
+<p>NIPS’14 的论文，简单并行化 LBFGS里面的双循环（最耗时，计算量巨大）。</p>
+
+<p><a href="http://blog.datadive.net/selecting-good-features-part-iv-stability-selection-rfe-and-everyting-side-by-side/"><strong>特征工程选择系列</strong></a></p>
+
+<p>特征工程系列文章：Part1.单变量选取 Part2.线性模型和正则化 Part3.随机森林 Part4.稳定性选择法、递归特征排除法(RFE)及综合比较。有 Python 代码。</p>
+
+<p><a href="http://www.weibo.com/p/1001603795687165852957"><strong>机器学习代码心得之​有监督学习的模块</strong></a>
+<a href="http://www.weibo.com/p/1001603795714256832384"><strong>机器学习代码心得之迭代器和流水处理</strong></a></p>
+
+<p>新一代大神陈天奇怪的系列文章，有兴趣的直接顺着看吧。</p>
+
+<p><a href="http://yanirseroussi.com/2014/12/29/stochastic-gradient-boosting-choosing-the-best-number-of-iterations/"><strong>STOCHASTIC GRADIENT BOOSTING: CHOOSING THE BEST NUMBER OF ITERATIONS</strong></a></p>
+
+<p>Kaggle达人YANIR SEROUSSI告诉你如何选择Stochastic Gradient Boosting的训练最佳iteration超参数。不过我比较存疑，因为如果条件允许，当然迭代的越多越好……</p>
+
+<p><a href="http://www.eeshyang.com/papers/KDD14Jubjub.pdf"><strong>Large-Scale High-Precision Topic Modeling on Twitter</strong></a></p>
+
+<p>Twitter 高级研究员的 KDD’14论文。有不少实用技巧，比如短文本特征，LR结果概率化修正，正样本抽样，PU学习后负样本选取。</p>
+
+<p><a href="http://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks.pdf"><strong>How transferable are features in deep neural
+networks?</strong></a></p>
+
+<p>也是争议比较大的一篇文章，finetuning 有一定帮助，但是不够细致。</p>
+
+<p><a href="http://blog.csdn.net/yihaizhiyan/article/details/41359957"><strong>Dark Knowledge from Hinton</strong></a></p>
+
+<p>有心人整理的 Hinton 提到的 Dark Knowledge 的一些资源。</p>
+
+<p><a href="http://leon.bottou.org/publications/pdf/tricks-2012.pdf"><strong>Stochastic Gradient Descent Tricks</strong></a></p>
+
+<p>L eon Bottou 写的 Stochastic Gradient Descent Tricks 挺好，做工程也要做的漂亮。</p>
+
+<p><a href="http://blog.csdn.net/zouxy09/article/details/45288129">**神经网络训练中的Tricks之高效BP（反向传播算法）</a></p>
+
+<p>翻译文章。神经网络训练中的Tricks之高效BP（反向传播算法），来自与于《Neural Networks: Tricks of the Trade》一书第二版中的第一章 Efficient BackProp 的部分小节。</p>
+
+<p><a href="http://bavm2013.splashthat.com/img/events/46439/assets/34a7.ranzato.pdf"><strong>Deep Learning for Vision: Tricks of the Trade</strong></a></p>
+
+<p>Marc’Aurelio Ranzato 在 CVPR 上 的 presentation slides/talk（Youtube 等地方可以搜到）。caffe 作者之一贾扬清推荐。涉及到了许多 DL 的调参技巧（在 slides 比较靠后的地方）</p>
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="/tags/#machine learning" title="Pages tagged machine learning" class="tag">machine learning</a><a href="/tags/#deep learning" title="Pages tagged deep learning" class="tag">deep learning</a></span>
+        <span><a href="/machinelearning/2015/04/17/collections-of-tips-for-machine-learning.html" rel="bookmark" title="Collections of Tips for Machine Learning">Collections of Tips for Machine Learning</a> was published on <span class="entry-date date published updated"><time datetime="2015-04-17T00:00:00+08:00">April 17, 2015</time></span></span>
+        
+        <span class="author vcard"><span class="fn"><a href="/about/" title="About Yanran Li">Yanran Li</a></span></span>
+        <div class="social-share">
+          <ul class="socialcount socialcount-small inline-list">
+            <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=/machinelearning/2015/04/17/collections-of-tips-for-machine-learning.html" title="Share on Facebook"><span class="count"><i class="icon-facebook-sign"></i> Like</span></a></li>
+            <li class="twitter"><a href="https://twitter.com/intent/tweet?text=/machinelearning/2015/04/17/collections-of-tips-for-machine-learning.html" title="Share on Twitter"><span class="count"><i class="icon-twitter-sign"></i> Tweet</span></a></li>
+            <li class="googleplus"><a href="https://plus.google.com/share?url=/machinelearning/2015/04/17/collections-of-tips-for-machine-learning.html" title="Share on Google Plus"><span class="count"><i class="icon-google-plus-sign"></i> +1</span></a></li>
+          </ul>
+        </div><!-- /.social-share -->
+      </footer>
+    </div><!-- /.entry-content -->
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    
+    <div class="read-more">
+      
+        <div class="read-more-header">
+          <a href="/life/2015/04/15/how-i-manage-my-knowledge.html" class="read-more-btn">Read More</a>
+        </div><!-- /.read-more-header -->
+        <div class="read-more-content">
+          <h3><a href="/science/2015/06/23/Ipython-Notebook.html" title="Ipython Notebook 学习">Ipython Notebook 学习</a></h3>
+          <p>Ipython Notebook  学习## Lecture 1 introduction to python programmingIn addition, there are a number of Python keywords that cannot be used...&hellip; <a href="/science/2015/06/23/Ipython-Notebook.html">Continue reading</a></p>
+        </div><!-- /.read-more-content -->
+      
+      <div class="read-more-list">
+        
+          <div class="list-item">
+            <h4><a href="/science/2015/06/17/thermodynamics-potentials.html" title="热力学势">热力学势</a></h4>
+            <span>Published on June 17, 2015</span>
+          </div><!-- /.list-item -->
+        
+          <div class="list-item">
+            <h4><a href="/peppypapers/2015/05/23/Adapations-and-Variations-of-Word2Vec.html" title="Adapations and Variations of Word2vec">Adapations and Variations of Word2vec</a></h4>
+            <span>Published on May 23, 2015</span>
+          </div><!-- /.list-item -->
+        
+      </div><!-- /.read-more-list -->
+      
+    </div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2015 Yanran Li. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/hpstr/">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'yanranli'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>	        
+
+</body>
+</html>
