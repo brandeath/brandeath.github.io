@@ -38,4 +38,4 @@ tags:
 信息同时编码在光子的极化和轨道角动量自由度上。发展了对于光子轨道角动量的高效率操控和测量技术手段，以及多自由度的联合操纵技术，首次实现了轨道角动量的多光子纠缠。
 
 ![Scheme for quantum teleportation of the spin–orbit composite
-states](/images/2015/higt_quantum_teleportation.jpg)
+states](/images/post/2015/high_quantum_teleportation.jpg)
