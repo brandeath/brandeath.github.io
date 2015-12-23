@@ -97,7 +97,3 @@ $$p\propto \frac{1}{2}(1+cos(\phi+\varphi))
 
 [3] Cai, X.-D. et al. Entanglement-Based Machine Learning on a Quantum Computer. Phys. Rev. Lett. 114, 110504 (2015).
 
-
-
-
-[2] S. Boyd. Alternating Direction Method of Multipliers (Slides)
