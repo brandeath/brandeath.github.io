@@ -39,3 +39,9 @@ tags:
 
 ![Scheme for quantum teleportation of the spin–orbit composite
 states](/images/posts/2015/high_quantum_teleportation.jpg)
+
+两个干涉结构不能简单地级联，解决方案是利用量子非破坏性测量。
+
+##3 量子求解线性方程组
+量子计算机通过将经典数据编码在量子态希尔伯特空间中，理论上能够实现指数级的加速。
+解线性方程组问题是：在给定向量$$\vec{b}$$和矩阵$$A$$的条件下，求解向量$$\vec{x}$$，满足$$A\vec{x}=\vec{b}$$。或者等价表示为，求解向量$$\vec{x}=A^{-1}\vec{b}$$。把输入态和输出态在矩阵$$A$$的本征态上展开，可以得到输出向量$$|x\rangle = A^{-1}|b \rangle = A^{-1}\sum_{j}\beta_{j}|u_j\rangle = \sum_{j}\frac{\beta_j}{\lambda_j}|u_j\rangle$$。 可见输出向量x和输入向量b的区别在于每一个本征态前面额外添加了一个对应的本征值倒数作为系数，因此求解线性方程组的目的就可以转化为如何得到这些本征值信息并将其加在对应的本征态分量上。获得这些本征值信息又如何把本征值信息添加到相应的本征态的分母上去就分别是量子线性方程算法的第一步和第二步。
