@@ -93,7 +93,14 @@ $$p\propto \frac{1}{2}(1+cos(\phi+\varphi))
 
 [1] Wang, X.-L. et al. Quantum teleportation of multiple degrees of freedom of a single photon. Nature 518, 516–519 (2015).
 
-[2] Cai, X.-D. et al. Experimental Quantum Computing to Solve Systems of Linear Equations. Phys. Rev. Lett. 110, 230501 (2013).
+[2] Harrow, A., Hassidim, A. & Lloyd, S. Quantum Algorithm for Linear Systems of Equations. Phys. Rev. Lett. 103, 150502 (2009).
 
-[3] Cai, X.-D. et al. Entanglement-Based Machine Learning on a Quantum Computer. Phys. Rev. Lett. 114, 110504 (2015).
 
+[3] Cai, X.-D. et al. Experimental Quantum Computing to Solve Systems of Linear Equations. Phys. Rev. Lett. 110, 230501 (2013).
+
+[4] Rebentrost, P., Mohseni, M. & Lloyd, S. Quantum Support Vector Machine for Big Data Classification. Phys. Rev. Lett. 113, 130503 (2014).
+
+
+[5] Cai, X.-D. et al. Entanglement-Based Machine Learning on a Quantum Computer. Phys. Rev. Lett. 114, 110504 (2015).
+
+[6] Li, Z., Liu, X., Xu, N. & Du, J. Experimental Realization of a Quantum Support Vector Machine. Phys. Rev. Lett. 114, 140504 (2015).
