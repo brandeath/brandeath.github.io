@@ -57,6 +57,7 @@ links:
 timezone:    Asia/Singapore
 future:      true
 #pygments:    true
+highlighter: rouge
 rouge: true
 markdown:    kramdown
 
