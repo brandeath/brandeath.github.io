@@ -1,6 +1,6 @@
-title:            Yanran's Attic
-description:      "Natural Language Processing, Semantic Embedding, Machine learning, deep learning"
-disqus_shortname: yanranli
+title:            Han's Attic
+description:      "Quantum"
+disqus_shortname: Hanguang
 # Your site's domain goes here. When working locally use localhost server leave blank
 # PS. If you set this wrong stylesheets and scripts won't load and most links will break.
 # PPS. If you leave it blank for local testing home links won't work, they'll be fine for live domains though.
@@ -8,17 +8,17 @@ url:
 
 # Owner/author information
 owner:
-  name:           Yanran Li
+  name:           Hanguang
   avatar:         avatar.jpg
-  bio:            "Research Assistant at PolyU"
-  email:          yanranli.summer@gmail.com
+  bio:            "Research Fellow at NUS"
+  email:          hanyun0514@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
   facebook: 
-  weibo:          summerrlee
-  github:         niangaotuantuan
+  weibo:          ignorantguang
+  github:         brandeath
   stackexchange:  
-  linkedin:       233043238
+  linkedin:       
   instagram:      
   flickr:         
   tumblr:         
@@ -54,9 +54,10 @@ links:
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Hong_Kong
+timezone:    Asia/Singapore
 future:      true
-pygments:    true
+#pygments:    true
+rouge: true
 markdown:    kramdown
 
 # Amount of posts to show on home page
