@@ -25,6 +25,7 @@ tags:
 #### 田渊栋:
 
 [一些感悟](https://zhuanlan.zhihu.com/p/26178137) 
+[一些感悟](\resource\一些感悟-TianYuandong.md) 
 
 #### 机器学习：
 

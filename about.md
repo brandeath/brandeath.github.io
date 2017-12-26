@@ -7,7 +7,7 @@ image:
   feature: bg_about.jpg
 ---
 
-I an **Yunguang Han**, a Phd student in USTC.
+I an **Guang Han**, a Phd student in USTC.
 
 This blog uses the theme of [Yanran's Attic BLOG](yanran.li).
 
@@ -18,6 +18,6 @@ This blog uses the theme of [Yanran's Attic BLOG](yanran.li).
 
 
 
-       
+​       
 
-                 
+​                 
